@@ -1,0 +1,65 @@
+name: sync_app
+description: SKYLINE — This Is My Era
+publish_to: 'none'
+version: 1.2.0+2
+
+# CI pool: 3.32.0 / 3.32.5 / 3.35.0 / 3.38.0 (Dart ~3.8–3.10)
+environment:
+  sdk: '>=3.8.0 <4.0.0'
+  flutter: '>=3.32.0 <3.39.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  http_parser: ^4.1.2
+  shared_preferences: ^2.3.3
+  socket_io_client: ^3.0.2
+  image_picker: ^1.1.2
+  google_fonts: ^6.2.1
+  provider: ^6.1.2
+  intl: ^0.20.3
+  qr_flutter: ^4.1.0
+  url_launcher: ^6.3.1
+  video_player: ^2.9.2
+  chewie: ^1.8.5
+  share_plus: ^10.1.4
+  path_provider: ^2.1.5
+  image: ^4.5.4
+  device_info_plus: ^11.3.3
+  just_audio: ^0.10.6
+  audio_session: ^0.2.4
+  cached_network_image: ^3.4.1
+  wakelock_plus: ^1.2.8
+  flutter_tts: ^4.2.5
+  speech_to_text: ^7.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/images/skyline_app_icon.png
+  adaptive_icon_background: "#E8FFEC"
+  adaptive_icon_foreground: assets/images/skyline_app_icon.png
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/videos/
+  fonts:
+    - family: Rajdhani
+      fonts:
+        - asset: assets/fonts/Rajdhani-Regular.ttf
+    - family: Genetic
+      fonts:
+        - asset: assets/fonts/Genetic.ttf
+    - family: Bungee
+      fonts:
+        - asset: assets/fonts/Bungee.ttf
